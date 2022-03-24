@@ -39,7 +39,7 @@ public class LoginViewImpl extends AppCompatActivity implements LoginViewInterfa
 
     @Override
     public void exito() {
-        Toast.makeText(this, "Bienvenido usuario", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.toast_exito, Toast.LENGTH_SHORT).show();
     }
 
     @Override

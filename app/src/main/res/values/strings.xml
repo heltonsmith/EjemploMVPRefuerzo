@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ejemplo MVP Basico Refuerzo 01</string>
+    <string name="toast_exito">Bienvenido Usuario</string>
 </resources>
