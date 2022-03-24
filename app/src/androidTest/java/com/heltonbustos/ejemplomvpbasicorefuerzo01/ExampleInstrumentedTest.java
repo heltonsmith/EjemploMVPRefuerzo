@@ -43,7 +43,7 @@ public class ExampleInstrumentedTest extends TypeSafeMatcher<Root> {
 
     @Rule
     public ActivityScenarioRule<LoginViewImpl> actividad
-            = new ActivityScenarioRule<LoginViewImpl>(LoginViewImpl.class);
+            = new ActivityScenarioRule<>(LoginViewImpl.class);
 
 
     @Test
@@ -61,6 +61,7 @@ public class ExampleInstrumentedTest extends TypeSafeMatcher<Root> {
                 .inRoot(new ExampleInstrumentedTest())
                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
+
 
     @Override
     protected boolean matchesSafely(Root item) {
